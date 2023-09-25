@@ -25,3 +25,12 @@ body {
  .form {
   justify-content: center;
  }
+
+ #search {
+  padding: 10px;
+  width: 300px;
+ }
+
+ #delete {
+  margin-right: 10px;
+ }

@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Card from "../components/Card";
+import Search from "./Search";
+
+
 const URL = import.meta.env.VITE_BASE_URL;
 const USERNAME = import.meta.env.VITE_BASE_USERNAME;
 const PASSWORD = import.meta.env.VITE_BASE_PASSWORD;
@@ -41,18 +44,7 @@ const Restaurant = () => {
   return (
     <div>
       <h1>Restaurant</h1>
-      <form style={{margin:"10"}} className="d-flex">
-        <input
-          type="text"
-          className="form-control"
-          name="name"
-          placeholder="Search"
-          value={searchText}
-          onChange={(event) => {
-            setSearchText(event.target.value);
-          }}
-        />
-      </form>
+      <Search searchText={searchText} setSearchText={setSearchText} />
       <div className="row">
         <div className="restaurant">
           {restaurant

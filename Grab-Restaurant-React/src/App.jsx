@@ -11,6 +11,7 @@ import Edit from "./pages/Edit";
 function App() {
   return (
     <>
+    
       <BrowserRouter>
         <NavBar />
         <div className="App">

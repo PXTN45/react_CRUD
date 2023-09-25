@@ -13,7 +13,7 @@ const Card = ({ restaurant, handleDelete }) => {
       <div className="card-body">
         <h5 className="title">{restaurant.name}</h5>
         <p className="card-text">{restaurant.type}</p>
-        <Link to="" className="btn btn-danger px-2" onClick={() => {
+        <Link to="" id='delete' className="btn btn-danger px-2" onClick={() => {
           handleDelete(restaurant.id);
         }}>
           Delete

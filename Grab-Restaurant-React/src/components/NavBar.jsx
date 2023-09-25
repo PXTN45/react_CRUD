@@ -32,7 +32,6 @@ const NavBar = () => {
                 Add
               </Link>
             </li>
-
           </ul>
         </div>
       </div>
