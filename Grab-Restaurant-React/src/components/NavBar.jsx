@@ -33,6 +33,25 @@ const NavBar = () => {
               </Link>
             </li>
           </ul>
+          <form className="d-flex">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item" id="sign">
+                <Link className="nav-link" to="./sign_in">
+                  sign in
+                </Link>
+              </li>
+              <li className="nav-item" id="sign">
+                <Link className="nav-link">
+                  /
+                </Link>
+              </li>
+              <li className="nav-item" id="sign">
+                <Link className="nav-link" to="./sign_up">
+                  sign up
+                </Link>
+              </li>
+            </ul>
+          </form>
         </div>
       </div>
     </nav>
